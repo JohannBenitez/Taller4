@@ -1,0 +1,84 @@
+
+
+#gridContenedorArea {
+
+    display: grid;
+    grid-template-areas: 'header header header'
+                         'navGlobal navGlobal navGlobal'
+                         'page page navLocal'
+                         'content1 content1 navLocal'
+                         'content2 content3 sideBar'
+                         'footer footer footer';
+    grid-template-rows: 80px 80px 80px 80px 150px 80px;
+    gap: 5px;
+    background-color: rgb(189, 176, 176);
+
+}
+
+#gridContenedorArea > div {
+    text-align: center;
+    border: 1px solid blue;
+}
+
+.header {
+
+    grid-area: header;
+    background-color: #3333ff;
+
+}
+
+.navGlobal {
+
+    grid-area: navGlobal;
+    background-color: #6666ff;
+
+}
+
+.page {
+
+    grid-area: page;
+    background-color: palevioletred;
+
+}
+
+.navLocal{
+
+    grid-area: navLocal;
+    background-color: #f5ff66;
+
+}
+
+.content1 {
+
+    grid-area: content1;
+    background-color: #ff6666;
+
+}
+
+.content2 {
+
+    grid-area: content2;
+    background-color: #ff6666;
+
+}
+
+.content3 {
+
+    grid-area: content3;
+    background-color: #ff6666;
+
+}
+
+.sideBar {
+
+    grid-area: sideBar;
+    background-color: yellow;
+
+}
+
+.footer {
+
+    grid-area: footer;
+    background-color: gainsboro;
+
+}
